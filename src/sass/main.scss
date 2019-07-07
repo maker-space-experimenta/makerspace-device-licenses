@@ -1,0 +1,50 @@
+.makerspace-device-licenses {
+  @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+  @import "./jquery-datatables.css";
+  @import "./bootstrap-datatables.css";
+
+  background: none;
+
+  .ms-dl-led-red {
+    display: block;
+    background: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+  .ms-dl-led-green {
+    display: block;
+    background: green;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+
+  .first-col {
+    min-width: 150px;
+    position: sticky;
+    left: 180px;
+  }
+
+  th {
+    background: rgb(180, 180, 180);
+
+    td.first-col {
+      background: rgb(180, 180, 180);
+    }
+  }
+  tr:nth-child(even) {
+    background: rgb(200, 200, 200);
+
+    td.first-col {
+      background: rgb(200, 200, 200);
+    }
+  }
+  tr:nth-child(odd) {
+    background: #f1f1f1;
+    td.first-col {
+      background: #f1f1f1;
+    }
+  }
+}
